@@ -13,7 +13,7 @@ const CVEMonitorSection = () => {
 
       <div className="Capsule flex flex-row flex-wrap gap-[19px]">
         {/* LeftSection  */}
-        <div className="NewCVEs bg-white w-[570px] h-[400px] flex flex-col rounded-[8px] shadow-custom pb-[26px]">
+        <div className="NewCVEs bg-white w-full h-auto xl:w-[570px] lg:h-[400px] flex flex-col rounded-[8px] pb-[26px]">
           <HeaderTitle
             title="New/Updated CVEs"
             iconSrc="/icons/openLink.png"
@@ -21,7 +21,7 @@ const CVEMonitorSection = () => {
             linkShow={false}
           />
 
-          <div className="ChartDiv flex flex-row mt-[22px] ml-[76px] mr-[37px] mb-[6px] gap-[87px]">
+          <div className="ChartDiv flex flex-row mt-[22px] ml-[76px] mr-[37px] mb-[6px] gap-[1rem] lg:gap-[87px] flex-wrap">
             <DonutChart />
             <div className="flex flex-col gap-[5px]">
               <CveStats
@@ -110,7 +110,7 @@ const CVEMonitorSection = () => {
         </div>
 
         {/* Right Section  */}
-        <div className="DOVbyCVSS bg-white w-[570px] flex flex-col rounded-[8px] shadow-custom ">
+        <div className="DOVbyCVSS bg-white w-full xl:w-[570px] flex flex-col rounded-[8px] overflow-hidden">
           <HeaderTitle
             title="Distribution of Vulnerabilities by CVSS Scores"
             iconSrc="/icons/openLink.png"

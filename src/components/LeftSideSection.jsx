@@ -10,7 +10,7 @@ const LeftSideSection = () => {
   return (
     <div className="LeftSide gap-[1rem] flex flex-col w-full xl:max-w-[687px]">
       {/* L  */}
-      <div className="LeftBox1 bg-white flex flex-col shadow-custom rounded-[8px] h-[134px]">
+      <div className="LeftBox1 bg-white flex flex-col rounded-[8px] h-[134px]">
         {/* A */}
         <HeaderTitle
           title="Active Ransomware Groups"
@@ -42,7 +42,7 @@ const LeftSideSection = () => {
           </div>
         </div>
       </div>
-      <div className="LeftBox2 bg-white rounded-[8px] shadow-custom h-[344px]">
+      <div className="LeftBox2 bg-white rounded-[8px] h-[344px]">
         <HeaderTitle
           title="Recent Attack and Victims"
           iconSrc="/icons/openLink.png"
@@ -52,6 +52,7 @@ const LeftSideSection = () => {
         <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px] overflow-x-auto rounded-[8px]">
           {/* Card  */}
           <RecentAttackVictimCard iconSrc={"/icons/rav1.svg"} />
+          <RecentAttackVictimCard iconSrc={"/icons/rav2.svg"} />
           <RecentAttackVictimCard iconSrc={"/icons/rav2.svg"} />
         </div>
       </div>

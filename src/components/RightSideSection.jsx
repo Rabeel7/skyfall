@@ -5,7 +5,7 @@ import HeaderTitle from "./reuseablleUI/HeaderTitle";
 
 const RightSideSection = () => {
   return (
-    <div className="RightSide w-full xl:w-[451px] rounded-[8px] bg-bgColors-light shadow-custom h-[973px] lg:h-auto overflow-y-auto">
+    <div className="RightSide w-full xl:w-[451px] rounded-[8px] bg-bgColors-light xl:h-[973px] overflow-y-auto">
       <HeaderTitle
         title="Cyber News Feed"
         iconSrc="/icons/openLink.png"

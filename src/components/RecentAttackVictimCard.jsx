@@ -5,7 +5,7 @@ import UIButton from "./reuseablleUI/UIButton";
 
 const RecentAttackVictimCard = ({ iconSrc }) => {
   return (
-    <div className="Card p-[10px] w-[349px] h-[267px] mr-[15px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] shadow-custom">
+    <div className="Card p-[10px] w-[349px] h-[267px] mr-[15px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] ">
       <div className="LeftCardSection mr-[15px] gap-[14px] flex flex-col ">
         <Image
           src={iconSrc || ""}
@@ -45,7 +45,7 @@ const RecentAttackVictimCard = ({ iconSrc }) => {
         </div>
       </div>
 
-      <div class="min-h-[246px] border-[#DEE7F7] border-[0.5px] w-[2px] self-stretch bg-black "></div>
+      <div className="min-h-[246px] border-[#DEE7F7] border-[0.5px] w-[2px] self-stretch bg-black "></div>
 
       <div className="RightCardSection gap-[11px] flex flex-col ml-[15px] w-[247px] ">
         <div className="text font-bold text-14 leading-[140%]">

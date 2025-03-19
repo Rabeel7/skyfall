@@ -3,7 +3,7 @@ import React from "react";
 
 const CyberNewsFeedCard = ({ iconSrc, category, title, date }) => {
   return (
-    <div className="flex flex-row items-normal gap-[10px] bg-white rounded-[8px] py-[11px] px-[10px] leading-[140%] w-[400px]">
+    <div className="flex flex-row items-normal gap-[10px] bg-white rounded-[8px] py-[11px] px-[10px] leading-[140%] w-full lg:w-[400px]">
       <div className="b1-img ">
         <Image src={iconSrc} alt="Icon" width={70} height={70} />
       </div>

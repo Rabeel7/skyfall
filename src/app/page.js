@@ -48,7 +48,7 @@ const statsData = [
 
 export default function Home() {
   return (
-    <div className="Dash1 w-[100vw] bg-back text-border py-[27px] px-[30px] shadow-custom">
+    <div className="Dash1 w-[100vw] bg-back text-border py-[27px] px-[30px]">
       {/* layer1  */}
       {/* <h1 className="text-accent text-14">Hello</h1> */}
       <div className="layer1 cursor-pointer bg-white p-[16px] mb-[17px] flex items-center justify-start border-1 rounded-[10px] gap-[1rem] h-[50px] w-[250px]">
@@ -83,9 +83,9 @@ export default function Home() {
       {/* layer4  */}
       <CVEMonitorSection />
 
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-wrap gap-[19px]">
         {/* layer5  */}
-        <div className="L5 bg-white w-[570px] flex flex-col rounded-[8px] shadow-custom mr-[19px]">
+        <div className="L5 bg-white w-[570px] flex flex-col flex-wrap rounded-[8px] ">
           <HeaderTitle
             title="Threat Intelligence"
             iconSrc="/icons/openLink.png"
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
 
         {/* layer6 */}
-        <div className="L6 bg-white flex flex-col rounded-[8px] shadow-custom ">
+        <div className="L6 bg-white flex flex-col rounded-[8px] ">
           <HeaderTitle
             title="Industry-Specific Threats"
             iconSrc="/icons/openLink.png"

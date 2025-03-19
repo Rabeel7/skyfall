@@ -1,101 +1,176 @@
+import CVEMonitorSection from "@/components/CVEMonitorSection";
+import CyberNewsFeedCard from "@/components/CyberNewsFeedCard";
+import Divider from "@/components/Divider";
+import IconImage from "@/components/IconImage";
+import LeftSideSection from "@/components/LeftSideSection";
+import HeaderTitle from "@/components/reuseablleUI/HeaderTitle";
+import RightSideSection from "@/components/RightSideSection";
+import StatsCard from "@/components/StatsCard";
 import Image from "next/image";
+
+const statsData = [
+  {
+    title: "Active Ransomware Groups",
+    iconSrc: "/icons/stats_box_icons.png",
+    mainValue: 62,
+    totalLabel: "Total Groups:",
+    totalValue: "264",
+  },
+  {
+    title: "Recent Attack & Victims",
+    iconSrc: "/icons/stats_box_icon2.png",
+    mainValue: 162,
+    totalLabel: "Last Month:",
+    totalValue: "96",
+  },
+  {
+    title: "TTPs",
+    iconSrc: "/icons/stats_box_icon3.png",
+    mainValue: 162,
+    totalLabel: "",
+    totalValue: "",
+  },
+  {
+    title: "Post & Announcement",
+    iconSrc: "/icons/stats_box_icon4.png",
+    mainValue: 162,
+    totalLabel: "Recent Post:",
+    totalValue: "2 hr ago",
+  },
+  {
+    title: "Potential Targets",
+    iconSrc: "/icons/stats_box_icon5.png",
+    mainValue: 162,
+    totalLabel: "Total Targets:",
+    totalValue: "06",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="Dash1 w-[100vw] bg-back text-border py-[27px] px-[30px] shadow-custom">
+      {/* layer1  */}
+      {/* <h1 className="text-accent text-14">Hello</h1> */}
+      <div className="layer1 cursor-pointer bg-white p-[16px] mb-[17px] flex items-center justify-start border-1 rounded-[10px] gap-[1rem] h-[50px] w-[250px]">
+        <div className="text-13 font-bold leading-[140%]">
+          + Add Threat Source
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="text-13 color-neutral">: google.com</div>
+      </div>
+
+      {/* layer2 */}
+      <div className="layer2 gap-[12px] mb-[17px] flex flex-row items-baseline justify-start flex-wrap">
+        {/* Card1 */}
+        {statsData.map((stat, index) => (
+          <StatsCard
+            key={index}
+            title={stat.title}
+            iconSrc={stat.iconSrc}
+            mainValue={stat.mainValue}
+            totalLabel={stat.totalLabel}
+            totalValue={stat.totalValue}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+        ))}
+      </div>
+
+      {/* layer 3 */}
+      <div className="Layer3 gap-[21px] flex flex-wrap flex-col md:flex-row items-normal justify-start w-full overflow-x-auto">
+        <LeftSideSection />
+
+        <RightSideSection />
+      </div>
+
+      {/* layer4  */}
+      <CVEMonitorSection />
+
+      <div className="flex flex-row">
+        {/* layer5  */}
+        <div className="L5 bg-white w-[570px] flex flex-col rounded-[8px] shadow-custom mr-[19px]">
+          <HeaderTitle
+            title="Threat Intelligence"
+            iconSrc="/icons/openLink.png"
+            iconAlt="Open Link"
+            linkShow={false}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+
+          <div className="flex flex-row flex-wrap gap-[9px] px-[17px] py-[14px]">
+            <Image
+              src="/icons/google.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/facebook.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/teslap.png"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/google.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/facebook.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+          </div>
+        </div>
+
+        {/* layer6 */}
+        <div className="L6 bg-white flex flex-col rounded-[8px] shadow-custom ">
+          <HeaderTitle
+            title="Industry-Specific Threats"
+            iconSrc="/icons/openLink.png"
+            iconAlt="Open Link"
+            linkShow={true}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+          <div className="flex flex-row flex-wrap gap-[9px] px-[17px] py-[14px]">
+            <Image
+              src="/icons/aerospace.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/agriculture.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+
+            <Image
+              src="/icons/chemical.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/construction.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+            <Image
+              src="/icons/education.svg"
+              alt="Calendar Icon"
+              width={100}
+              height={64}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

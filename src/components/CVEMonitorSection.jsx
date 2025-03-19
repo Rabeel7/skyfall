@@ -217,16 +217,16 @@ const CveStats = ({ createdCount, updatedCount, code }) => {
         <span className="font-bold text-[#41479B] text-18 leading-[140%]">
           {createdCount}&nbsp;
         </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[140%]">
+        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
           CVEs Created,{" "}
         </span>
         <span className="font-bold text-[#41479B] text-18 leading-[140%]">
           {updatedCount}&nbsp;
         </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[140%]">
+        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
           CVEs{" "}
         </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[140%]">
+        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
           {code}
         </span>
       </div>

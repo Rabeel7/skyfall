@@ -9,7 +9,7 @@ const StatsCard = ({ title, iconSrc, mainValue, totalLabel, totalValue }) => {
         <div>
           <Image src={iconSrc} alt="Icon" width={24} height={24} />
         </div>
-        <div className="font-bold text-[24px]">{mainValue}</div>
+        <div className="font-bold text-[24px] leading-[100%]">{mainValue}</div>
       </div>
       {totalLabel.length > 0 && totalValue.length > 0 ? (
         <>

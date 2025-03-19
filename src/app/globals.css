@@ -3,6 +3,24 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@layer components {
+  .texting-black {
+    @apply font-normal text-12 text-black leading-[140%];
+  }
+  .texting-purple {
+    @apply font-normal text-12 leading-[140%] text-purple;
+  }
+  .texting-grey {
+    @apply overflow-hidden text-10 text-[#8C97B5] leading-[100%];
+  }
+  .lh-100 {
+    @apply leading-[100%];
+  }
+  .lh-140 {
+    @apply leading-[140%];
+  }
+}
+
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -21,6 +39,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

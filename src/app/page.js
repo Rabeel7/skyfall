@@ -48,7 +48,7 @@ const statsData = [
 
 export default function Home() {
   return (
-    <div className="Dash1 w-[100vw] bg-back text-border py-[27px] px-[30px]">
+    <div className="Dash1 w-[100vw] h-full bg-back text-border py-[27px] px-[30px]">
       {/* layer1  */}
       {/* <h1 className="text-accent text-14">Hello</h1> */}
       <div className="layer1 cursor-pointer bg-white p-[16px] mb-[17px] flex items-center justify-start border-1 rounded-[10px] gap-[1rem] h-[50px] w-[250px]">

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import IconBox from "./reuseablleUI/IconBox";
-import UIButton from "./reuseablleUI/UIButton";
+import IconBox from "@/components/reuseablleUI/IconBox";
+import UIButton from "@/components/reuseablleUI/UIButton";
 
 const RecentAttackVictimCard = ({ iconSrc }) => {
   return (
-    <div className="Card p-[10px] w-[349px] h-[267px] mr-[15px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] ">
+    <div className="Card bg-white p-[10px] w-[349px] h-[267px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] ">
       <div className="LeftCardSection mr-[15px] gap-[14px] flex flex-col ">
         <Image
           src={iconSrc || ""}
@@ -51,7 +51,7 @@ const RecentAttackVictimCard = ({ iconSrc }) => {
         <div className="text font-bold text-14 leading-[140%]">
           International AIDS Vaccine Initiative (iavi.org)  
         </div>
-        <div className="text overflow-hidden text-10 text-[#8C97B5] leading-[100%]">
+        <div className="texting-grey">
           The International AIDS Vaccine Initiative (IAVI) is a global
           not-for-profit, public-private partnership working to accelerate the
           development of vaccines to prevent HIV infection and AIDS. IAVI

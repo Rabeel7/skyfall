@@ -49,7 +49,7 @@ const LeftSideSection = () => {
           iconAlt="Open Link"
         />
         {/* You are making recent attack victim card  */}
-        <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px] overflow-x-auto rounded-[8px]">
+        <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px] overflow-x-auto rounded-[8px] gap-[15px]">
           {/* Card  */}
           <RecentAttackVictimCard iconSrc={"/icons/rav1.svg"} />
           <RecentAttackVictimCard iconSrc={"/icons/rav2.svg"} />

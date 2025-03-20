@@ -7,7 +7,7 @@ const CyberNewsFeedCard = ({ iconSrc, category, title, date }) => {
       <div className="b1-img min-h-[70px] min-w-[70px]">
         <Image src={iconSrc} alt="Icon" width={70} height={70} />
       </div>
-      <div className="b2-content flex flex-row gap-[6px] flex-wrap">
+      <div className="b2-content flex flex-col gap-[6px] flex-wrap">
         <div className="font-normal text-11 text-purple leading-[100%] overflow-hidden text-ellipsis">
           {category}
         </div>

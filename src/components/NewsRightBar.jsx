@@ -6,14 +6,14 @@ import HeaderTitle from "./reuseablleUI/HeaderTitle";
 const NewsRightBar = () => {
   return (
     <div className="col-span-5 md:col-span-2">
-      <div className="NewsRightBar w-full rounded-[8px] bg-bgColors-light overflow-y-auto">
+      <div className="NewsRightBar w-full rounded-[8px] bg-bgColors-light overflow-y-auto max-w-[451px]">
         <HeaderTitle
           title="Cyber News Feed"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
           linkShow={false}
         />
-        <div className="MainLeftBox flex flex-row flex-wrap  pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px] w-full  h-[435px] md:h-[890px] no-scrollbar overflow-y-auto">
+        <div className="MainLeftBox flex flex-row flex-wrap  pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px] w-full  h-[435px] md:h-[919px] no-scrollbar overflow-y-auto">
           {/* CyberNewsFeedCards */}
           {newsFeedData.map((news, index) => (
             <CyberNewsFeedCard

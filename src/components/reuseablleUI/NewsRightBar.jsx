@@ -4,14 +4,14 @@ import CyberNewsFeedCard from "../CyberNewsFeedCard";
 
 function NewsRightBar() {
   return (
-    <div className="RightSide w-full xl:w-[451px] rounded-[8px] bg-bgColors-light xl:h-[973px] overflow-y-auto">
+    <div className="RightSide w-full rounded-[8px] bg-bgColors-light overflow-y-auto">
       <HeaderTitle
         title="Cyber News Feed"
         iconSrc="/icons/openLink.png"
         iconAlt="Open Link"
         linkShow={false}
       />
-      <div className="MainLeftBox flex flex-row flex-wrap xl:flex-col pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px]">
+      <div className="MainLeftBox flex flex-row flex-wrap  pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px] w-full  h-[435px] md:h-[919px] no-scrollbar overflow-y-auto">
         {/* CyberNewsFeedCards */}
         {newsFeedData.map((news, index) => (
           <CyberNewsFeedCard
@@ -77,6 +77,22 @@ const newsFeedData = [
   },
   {
     iconSrc: "/icons/cnf6.svg",
+
+    category: "Network Security / Vulnerability",
+    title:
+      "Cisco Fixes Critical Privilege Escalation Flaw in Meeting Management (CVSS 9.9)",
+    date: "Jan 23, 2025",
+  },
+  {
+    iconSrc: "/icons/cnf7.svg",
+
+    category: "Network Security / Vulnerability",
+    title:
+      "Cisco Fixes Critical Privilege Escalation Flaw in Meeting Management (CVSS 9.9)",
+    date: "Jan 23, 2025",
+  },
+  {
+    iconSrc: "/icons/cnf7.svg",
 
     category: "Network Security / Vulnerability",
     title:

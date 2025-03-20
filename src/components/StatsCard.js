@@ -3,7 +3,7 @@ import Image from "next/image"; // If using Next.js, otherwise replace with an i
 
 const StatsCard = ({ title, iconSrc, mainValue, totalLabel, totalValue }) => {
   return (
-    <div className="Card min-w-[220px] min-h-[110px] gap-[8px] flex flex-col h-full bg-white rounded-[8px] pt-[13px] pb-[6px] px-[18px] gap-[10.5px ">
+    <div className="Card gap-[8px] flex flex-col h-full bg-white rounded-[8px] pt-[13px] pb-[6px] px-[18px] gap-[10.5px ">
       <div className="text-[12px] font-bold">{title}</div>
       <div className="flex flex-row items-center justify-between ">
         <div>

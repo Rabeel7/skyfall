@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @layer components {
-  .texting-black {
-    @apply font-normal text-12 text-black leading-[140%];
+  .para {
+    @apply font-normal text-12 leading-[100%];
   }
   .texting-purple {
     @apply font-normal text-12 leading-[140%] text-purple;
@@ -40,6 +40,7 @@
   --background: #ffffff;
   --foreground: #171717;
   height: 100%;
+  font-size: 12px;
 }
 
 @media (prefers-color-scheme: dark) {

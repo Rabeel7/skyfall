@@ -1,4 +1,3 @@
-"use client";
 import CyberNewsFeedCardTwo from "@/components/CyberNewsFeedCardTwo";
 import BackBtn from "@/components/reuseablleUI/BackBtn";
 import Card from "@/components/reuseablleUI/Card";

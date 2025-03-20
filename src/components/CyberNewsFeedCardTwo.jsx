@@ -16,8 +16,8 @@ const CyberNewsFeedCardTwo = ({ iconSrc, category, title, date }) => {
         </div>
         <div className="texting-grey">
           The North Korean threat actor known as the Lazarus Group has been
-          observed leveraging a "web-based administrative platform" to oversee
-          its command-and-control (C2) infrastructure.
+          observed leveraging a &quot;web-based administrative platform&quot; to
+          oversee its command-and-control (C2) infrastructure.
         </div>
 
         <div className="CardFooter flex flex-row items-normal ">

@@ -5,7 +5,7 @@
 
 @layer components {
   .para {
-    @apply font-normal text-12 leading-[100%];
+    @apply font-normal text-[#1A1B1F] text-12 leading-[100%];
   }
   .texting-purple {
     @apply font-normal text-12 leading-[140%] text-purple;
@@ -18,6 +18,9 @@
   }
   .lh-140 {
     @apply leading-[140%];
+  }
+  .lh-129 {
+    @apply leading-[129%];
   }
 }
 

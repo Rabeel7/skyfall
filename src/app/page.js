@@ -1,16 +1,10 @@
 import AddThreatBtn from "@/components/AddThreatBtn";
 import CardsLayer from "@/components/CardsLayer";
 import CVEMonitorSection from "@/components/CVEMonitorSection";
-import CyberNewsFeedCard from "@/components/CyberNewsFeedCard";
-import Divider from "@/components/Divider";
-import IconImage from "@/components/IconImage";
 import IndustrySpecificThreatCards from "@/components/IndustrySpecificThreatCards";
-import LeftSideSection from "@/components/LeftSideSection";
-import HeaderTitle from "@/components/reuseablleUI/HeaderTitle";
-import RightSideSection from "@/components/RightSideSection";
-import StatsCard from "@/components/StatsCard";
+import LeftGroup from "@/components/LeftGroup";
+import NewsRightBar from "@/components/NewsRightBar";
 import ThreatIntelligenceCards from "@/components/ThreatIntelligenceCards";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,16 +15,16 @@ export default function Home() {
       {/* L2*/}
       <CardsLayer />
 
-      {/* layer 3 */}
+      {/* L3 */}
       <div className="Layer3 gap-[21px] grid grid-cols-5">
-        <LeftSideSection />
-        <RightSideSection />
+        <LeftGroup />
+        <NewsRightBar />
       </div>
 
-      {/* layer4  */}
+      {/* L4  */}
       <CVEMonitorSection />
 
-      {/* layer5  */}
+      {/* L5  */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[19px]">
         <ThreatIntelligenceCards />
         <IndustrySpecificThreatCards />

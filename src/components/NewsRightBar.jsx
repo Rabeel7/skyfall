@@ -1,31 +1,34 @@
+import Image from "next/image";
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
-import CyberNewsFeedCard from "../CyberNewsFeedCard";
+import CyberNewsFeedCard from "./CyberNewsFeedCard";
+import HeaderTitle from "./reuseablleUI/HeaderTitle";
 
-function NewsRightBar() {
+const NewsRightBar = () => {
   return (
-    <div className="RightSide w-full rounded-[8px] bg-bgColors-light overflow-y-auto">
-      <HeaderTitle
-        title="Cyber News Feed"
-        iconSrc="/icons/openLink.png"
-        iconAlt="Open Link"
-        linkShow={false}
-      />
-      <div className="MainLeftBox flex flex-row flex-wrap  pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px] w-full  h-[435px] md:h-[890px] no-scrollbar overflow-y-auto">
-        {/* CyberNewsFeedCards */}
-        {newsFeedData.map((news, index) => (
-          <CyberNewsFeedCard
-            key={index}
-            iconSrc={news.iconSrc}
-            category={news.category}
-            title={news.title}
-            date={news.date}
-          />
-        ))}
+    <div className="col-span-5 md:col-span-2">
+      <div className="NewsRightBar w-full rounded-[8px] bg-bgColors-light overflow-y-auto">
+        <HeaderTitle
+          title="Cyber News Feed"
+          iconSrc="/icons/openLink.png"
+          iconAlt="Open Link"
+          linkShow={false}
+        />
+        <div className="MainLeftBox flex flex-row flex-wrap  pl-[26px] pt-[17px] pr-[25px] pb-[16px] gap-[10px] w-full  h-[435px] md:h-[890px] no-scrollbar overflow-y-auto">
+          {/* CyberNewsFeedCards */}
+          {newsFeedData.map((news, index) => (
+            <CyberNewsFeedCard
+              key={index}
+              iconSrc={news.iconSrc}
+              category={news.category}
+              title={news.title}
+              date={news.date}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default NewsRightBar;
 

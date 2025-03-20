@@ -8,9 +8,9 @@ import TableUI from "./reuseablleUI/TableUI";
 
 const LeftSideSection = () => {
   return (
-    <div className="LeftSide gap-[1rem] flex flex-col w-full xl:max-w-[687px]">
+    <div className="LeftSide gap-[1rem] col-span-5 md:col-span-3">
       {/* L  */}
-      <div className="LeftBox1 bg-white flex flex-col rounded-[8px] h-[134px]">
+      <div className="LeftBox1 bg-white flex flex-col rounded-[8px] h-[134px] mb-[18px]">
         {/* A */}
         <HeaderTitle
           title="Active Ransomware Groups"
@@ -42,14 +42,14 @@ const LeftSideSection = () => {
           </div>
         </div>
       </div>
-      <div className="LeftBox2 bg-white rounded-[8px] h-[344px]">
+      <div className="LeftBox2 bg-white rounded-[8px] h-[344px] mb-[18px]">
         <HeaderTitle
           title="Recent Attack and Victims"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
         />
         {/* You are making recent attack victim card  */}
-        <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px] overflow-x-auto rounded-[8px] gap-[15px]">
+        <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px]  rounded-[8px] gap-[15px] no-scrollbar overflow-x-auto">
           {/* Card  */}
           <RecentAttackVictimCard iconSrc={"/icons/rav1.svg"} />
           <RecentAttackVictimCard iconSrc={"/icons/rav2.svg"} />
@@ -57,7 +57,7 @@ const LeftSideSection = () => {
         </div>
       </div>
 
-      <div className="Layer4 bg-white rounded-[8px] h-[132px]">
+      <div className="Layer4 bg-white rounded-[8px] mb-[18px] pb-[8px]">
         <HeaderTitle
           title="Ransomware TTPs (Tactics, Techniques and Procedures)"
           iconSrc="/icons/openLink.png"
@@ -116,53 +116,32 @@ const LeftSideSection = () => {
         </div>
       </div>
 
-      <div className="Layer5 bg-white rounded-[8px] h-[313px]">
+      <div className="Layer5 bg-white rounded-[8px]">
         <HeaderTitle
           title="Ransomware Group Posts and Announcements:"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
         />
-        <div className="Table mx-[2rem]">
-          <TableUI
-            columns={["Date", "Title", "Group"]}
-            data={[
-              {
-                Date: "01-24-2024",
-                Title: "Security breach of CAPCOM network",
-                Group: "ragnarlocker",
-              },
-              {
-                Date: "02-10-2024",
-                Title: "Unauthorized access to financial records",
-                Group: "lockbit",
-              },
-              {
-                Date: "03-05-2024",
-                Title: "Major data leak from government agency",
-                Group: "revil",
-              },
-              {
-                Date: "04-15-2024",
-                Title: "Cyber attack on multinational corporation",
-                Group: "blackbasta",
-              },
-              {
-                Date: "05-22-2024",
-                Title: "Compromised credentials used in attack",
-                Group: "alphv",
-              },
-              {
-                Date: "06-30-2024",
-                Title: "Ransomware attack on healthcare provider",
-                Group: "clop",
-              },
-              {
-                Date: "07-14-2024",
-                Title: "Sensitive information stolen from bank",
-                Group: "darkside",
-              },
-            ]}
-          />
+
+        <div className="TableGrid pb-[15px] pl-[24px] pt-[12px] pr-[129px] ">
+          {/* Header  */}
+          <div className="Header grid grid-cols-4 mb-[15px] gap-x-[1rem] lg:gap-x-[70px]">
+            <div className="text1 col-span-1 para lh-140 font-medium">Date</div>
+            <div className="text2 col-span-2 para lh-140 font-medium">Time</div>
+            <div className="text3 col-span-1 para lh-140 font-medium">
+              Group
+            </div>
+          </div>
+
+          <div className="Header grid grid-cols-4 mb-[15px] gap-x-[1rem] gap-y-[15px] lg:gap-x-[70px]">
+            {data.map((item) => (
+              <React.Fragment key={item.id}>
+                <div className="text1 col-span-1 para">{item.date}</div>
+                <div className="text2 col-span-2 para">{item.description}</div>
+                <div className="text3 col-span-1 para">{item.author}</div>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -170,3 +149,48 @@ const LeftSideSection = () => {
 };
 
 export default LeftSideSection;
+
+const data = [
+  {
+    id: 1,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 2,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 3,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 4,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 5,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 6,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+  {
+    id: 7,
+    date: "01-24-2024",
+    description: "Security breach of CAPCOM network",
+    author: "ragnarlocker",
+  },
+];

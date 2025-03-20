@@ -11,9 +11,9 @@ const CVEMonitorSection = () => {
         CVE Monitor
       </div>
 
-      <div className="Capsule flex flex-row flex-wrap gap-[19px]">
+      <div className="Capsule grid grid-cols-1 md:grid-cols-2 gap-[19px]">
         {/* LeftSection  */}
-        <div className="NewCVEs bg-white w-full h-auto xl:w-[570px] lg:h-[400px] flex flex-col rounded-[8px] pb-[26px]">
+        <div className="NewCVEs bg-white w-full h-auto flex flex-col rounded-[8px] pb-[26px]">
           <HeaderTitle
             title="New/Updated CVEs"
             iconSrc="/icons/openLink.png"
@@ -21,7 +21,7 @@ const CVEMonitorSection = () => {
             linkShow={false}
           />
 
-          <div className="ChartDiv flex flex-row mt-[22px] ml-[76px] mr-[37px] mb-[6px] gap-[1rem] lg:gap-[87px] flex-wrap">
+          <div className="ChartDiv flex flex-row md:mt-[22px] md:ml-[76px] md:mr-[37px] md:pb-[6px] mt-[22px] ml-[76px] mr-[37px] mb-[0px]  gap-[1rem] flex-wrap">
             <DonutChart />
             <div className="flex flex-col gap-[5px]">
               <CveStats
@@ -42,7 +42,7 @@ const CVEMonitorSection = () => {
             </div>
           </div>
 
-          <div className="ab">
+          <div className="ab mb-[1rem] md:mb-0">
             <div className="font-bold mt-[10px] text-[##1A1B1F] text-14 leading-[140%] w-full text-center mb-[3px]">
               Know exploited vulnerabilities
             </div>
@@ -110,7 +110,7 @@ const CVEMonitorSection = () => {
         </div>
 
         {/* Right Section  */}
-        <div className="DOVbyCVSS bg-white w-full xl:w-[570px] flex flex-col rounded-[8px] overflow-hidden">
+        <div className="DOVbyCVSS bg-white w-full flex flex-col rounded-[8px] overflow-hidden">
           <HeaderTitle
             title="Distribution of Vulnerabilities by CVSS Scores"
             iconSrc="/icons/openLink.png"
@@ -213,22 +213,16 @@ export default CVEMonitorSection;
 const CveStats = ({ createdCount, updatedCount, code }) => {
   return (
     <div className="ContextText flex flex-col w-[230px]">
-      <div className="line1">
+      <div className="line1 font-normal text-[#1A1B1F] text-14 leading-[129%]">
         <span className="font-bold text-[#41479B] text-18 leading-[140%]">
           {createdCount}&nbsp;
         </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
-          CVEs Created,{" "}
-        </span>
+        <span className="">CVEs Created, </span>
         <span className="font-bold text-[#41479B] text-18 leading-[140%]">
           {updatedCount}&nbsp;
         </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
-          CVEs{" "}
-        </span>
-        <span className="font-normal text-[#1A1B1F] text-14 leading-[129%]">
-          {code}
-        </span>
+        <span>CVEs </span>
+        <span>{code}</span>
       </div>
     </div>
   );

@@ -5,7 +5,11 @@ import HeaderTitle from "./reuseablleUI/HeaderTitle";
 import NewsRightBar from "./reuseablleUI/NewsRightBar";
 
 const RightSideSection = () => {
-  return <NewsRightBar />;
+  return (
+    <div className="col-span-5 md:col-span-2">
+      <NewsRightBar />
+    </div>
+  );
 };
 
 export default RightSideSection;

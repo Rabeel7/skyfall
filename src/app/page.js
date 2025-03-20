@@ -59,7 +59,7 @@ export default function Home() {
       </div>
 
       {/* layer2 */}
-      <div className="layer2 gap-[12px] mb-[17px] flex flex-row items-baseline justify-start flex-wrap">
+      <div className="layer2 gap-[12px] mb-[17px] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-baseline">
         {/* Card1 */}
         {statsData.map((stat, index) => (
           <StatsCard
@@ -74,7 +74,7 @@ export default function Home() {
       </div>
 
       {/* layer 3 */}
-      <div className="Layer3 gap-[21px] flex flex-wrap flex-col md:flex-row items-normal justify-start w-full overflow-x-auto">
+      <div className="Layer3 gap-[21px] grid grid-cols-5">
         <LeftSideSection />
 
         <RightSideSection />
@@ -83,9 +83,9 @@ export default function Home() {
       {/* layer4  */}
       <CVEMonitorSection />
 
-      <div className="flex flex-row flex-wrap gap-[19px]">
-        {/* layer5  */}
-        <div className="L5 bg-white w-[570px] flex flex-col flex-wrap rounded-[8px] ">
+      {/* layer5  */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[19px]">
+        <div className="L5 bg-white w-full flex flex-col flex-wrap rounded-[8px] ">
           <HeaderTitle
             title="Threat Intelligence"
             iconSrc="/icons/openLink.png"
@@ -127,7 +127,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* layer6 */}
         <div className="L6 bg-white flex flex-col rounded-[8px] ">
           <HeaderTitle
             title="Industry-Specific Threats"

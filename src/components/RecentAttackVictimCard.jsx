@@ -48,7 +48,7 @@ const RecentAttackVictimCard = ({ iconSrc }) => {
       <div className="min-h-[246px] border-[#DEE7F7] border-[0.5px] w-[2px] self-stretch bg-black "></div>
 
       <div className="RightCardSection gap-[11px] flex flex-col ml-[15px] w-[247px] ">
-        <div className="text font-bold text-14 leading-[140%]">
+        <div className="text font-bold text-14 leading-[140%] text-black">
           International AIDS Vaccine Initiative (iavi.org)  
         </div>
         <div className="texting-grey">

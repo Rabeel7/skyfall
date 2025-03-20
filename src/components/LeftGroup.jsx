@@ -17,13 +17,13 @@ const LeftGroup = () => {
 
         <div className="A2 flex flex-col gap-[8px] pt-[16px] pr-[27px] pb-[26px] pl-[24px]">
           <div className="TitleLine w-full font-medium text-12 flex flex-row align-baseline items-center">
-            <div className="a flex-[3] font-medium text-12 leading-[100%]">
+            <div className="a flex-[3] font-medium text-12 leading-[100%] text-black">
               Slug
             </div>
-            <div className="b flex-[3] font-medium text-12 leading-[100%]">
+            <div className="b flex-[3] font-medium text-12 leading-[100%] text-black">
               Title
             </div>
-            <div className="c flex-[3] font-medium text-12 leading-[100%]">
+            <div className="c flex-[3] font-medium text-12 leading-[100%] text-black">
               fqdn
             </div>
           </div>
@@ -32,7 +32,9 @@ const LeftGroup = () => {
               http://basemmnnqwxe...
             </div>
 
-            <div className="b flex-[3] truncate leading-[100%]">Home</div>
+            <div className="b flex-[3] truncate leading-[100%] text-black">
+              Home
+            </div>
             <div className="c flex-[3] truncate text-neutral-dark leading-[100%]">
               basemmnnqwxevlymli5bs36o5ynti55xojzvn246spahniugwkff2pad.onion
             </div>

@@ -9,15 +9,17 @@ const StatsCard = ({ title, iconSrc, mainValue, totalLabel, totalValue }) => {
         <div>
           <Image src={iconSrc} alt="Icon" width={24} height={24} />
         </div>
-        <div className="font-bold text-[24px] leading-[100%]">{mainValue}</div>
+        <div className="font-bold text-[24px] leading-[100%] text-black">
+          {mainValue}
+        </div>
       </div>
       {totalLabel.length > 0 && totalValue.length > 0 ? (
         <>
           <div className="flex flex-row items-cflex bg-white gap-[8px] rounded-[8px] gap-[10.5px justify-between">
-            <div className="text-[10px] font-medium leading-[140%]">
+            <div className="text-[10px] font-medium leading-[140%] text-black">
               {totalLabel}
             </div>
-            <div className="text-[12px] font-bold leading-[140%]">
+            <div className="text-[12px] font-bold leading-[140%] text-black">
               {totalValue}
             </div>
           </div>

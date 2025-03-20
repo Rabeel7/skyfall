@@ -1,8 +1,3 @@
-import React from "react";
-import HeaderTitle from "./reuseablleUI/HeaderTitle";
-import DonutChart from "./reuseablleUI/DonutChart";
-import TableUI from "./reuseablleUI/TableUI";
-import DistributionTable from "./DistributionTable";
 import CVEMonitorLeftSection from "./CVEMonitorLeftSection";
 import CVEMonitorRightSection from "./CVEMonitorRightSection";
 

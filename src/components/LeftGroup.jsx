@@ -1,12 +1,9 @@
 import React from "react";
-import HeaderTitle from "./reuseablleUI/HeaderTitle";
-import Image from "next/image";
-import IconBox from "./reuseablleUI/IconBox";
 import RecentAttackVictimCard from "./RecentAttackVictimCard";
+import HeaderTitle from "./reuseablleUI/HeaderTitle";
 import UIButton from "./reuseablleUI/UIButton";
-import TableUI from "./reuseablleUI/TableUI";
 
-const LeftSideSection = () => {
+const LeftGroup = () => {
   return (
     <div className="LeftSide gap-[1rem] col-span-5 md:col-span-3">
       {/* L  */}
@@ -148,7 +145,7 @@ const LeftSideSection = () => {
   );
 };
 
-export default LeftSideSection;
+export default LeftGroup;
 
 const data = [
   {

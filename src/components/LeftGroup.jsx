@@ -46,7 +46,9 @@ const LeftGroup = () => {
           title="Recent Attack and Victims"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
+          link="/"
         />
+
         {/* You are making recent attack victim card  */}
         <div className="CardContainer w-full flex bg-white py-[15px] pl-[14px]  rounded-[8px] gap-[15px] no-scrollbar overflow-x-auto">
           {/* Card  */}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HeaderTitle = ({
@@ -7,6 +8,7 @@ const HeaderTitle = ({
   iconAlt = "Icon",
   className = "",
   linkShow = true,
+  link = "",
 }) => {
   return (
     <div className={`HeaderTitleBox flex flex-col ${className}`}>
@@ -15,7 +17,9 @@ const HeaderTitle = ({
           {title}
         </div>
         {iconSrc && linkShow && (
-          <Image src={iconSrc} alt={iconAlt} width={20} height={20} />
+          <Link href="/screen2" className="cursor-pointer">
+            <Image src={iconSrc} alt={iconAlt} width={20} height={20} />
+          </Link>
         )}
       </div>
 

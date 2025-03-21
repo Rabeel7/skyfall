@@ -5,7 +5,7 @@ import UIButton from "@/components/reuseablleUI/UIButton";
 
 const RecentAttackVictimCard = ({ iconSrc }) => {
   return (
-    <div className="Card bg-white p-[10px] w-[349px] h-[267px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] ">
+    <div className="Card bg-white p-[10px] h-[267px] flex flex-row border-[#E0E0E0] border-[1px] rounded-[8px] ">
       <div className="LeftCardSection mr-[15px] gap-[14px] flex flex-col ">
         <Image
           src={iconSrc || ""}

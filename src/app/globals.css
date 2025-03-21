@@ -81,3 +81,36 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.custom-modal-1 .ant-modal-footer {
+  display: none; /* Hide the footer for this specific modal */
+}
+
+.custom-modal-2 .ant-modal-footer {
+  display: none; /* Hide the footer for this specific modal */
+}
+.custom-modal-2 .ant-modal-content {
+  height: 511px;
+  width: 533px;
+  padding: 32px;
+}
+
+.custom-modal-2 .ant-modal-title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 1rem;
+}
+
+.custom-modal-2 .ant-modal-close {
+  top: 36.5px;
+  right: 34px;
+}
+
+.custom-modal-2 .anticon .anticon-close .ant-modal-close-icon {
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 2px;
+}

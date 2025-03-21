@@ -6,7 +6,7 @@ import HeaderTitle from "./reuseablleUI/HeaderTitle";
 const NewsRightBar = () => {
   return (
     <div className="col-span-5 md:col-span-2">
-      <div className="NewsRightBar w-full rounded-[8px] bg-bgColors-light overflow-y-auto max-w-[540px]">
+      <div className="NewsRightBar w-full rounded-[8px] bg-bgColors-light overflow-y-auto max-w-[540px] ml-auto">
         <HeaderTitle
           title="Cyber News Feed"
           iconSrc="/icons/openLink.png"

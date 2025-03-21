@@ -18,7 +18,7 @@ const AddThreatBtn = () => {
         <div className="text-13 font-bold leading-[140%] text-black">
           + Add Threat Source
         </div>
-        <div className="text-13 text-neutral">: google.com</div>
+        <div className="text-13 text-[#6B7280]">: google.com</div>
       </div>
       <ModalCard
         isModalOpen={isModalOpen}

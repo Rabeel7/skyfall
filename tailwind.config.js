@@ -57,6 +57,9 @@ module.exports = {
         white: {
           DEFAULT: "#FFFFFF",
         },
+        black: {
+          DEFAULT: "#000000",
+        },
         dividerColor: {
           DEFAULT: "#EEEEEE",
         },

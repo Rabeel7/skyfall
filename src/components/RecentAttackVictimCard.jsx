@@ -60,7 +60,7 @@ const RecentAttackVictimCard = ({ iconSrc }) => {
           communities in the trial process and AIDS vaccine education.
         </div>
         <div className="flex flex-row gap-[13px] mt-auto">
-          <div className="text font-normal text-10 leading-[100%]">Victim:</div>
+          <div className="para text-10 text-black">Victim:</div>
           <IconBox />
         </div>
       </div>

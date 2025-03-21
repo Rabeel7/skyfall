@@ -44,8 +44,8 @@ const CyberNewsFeedCard = ({ iconSrc, category, title, date }) => {
             />
           </div>
           <div
-            onClick={showModal}
-            className="d3 cursor-pointer col-span-1 justify-self-end flex flex-row items-center gap-[6px] cursor-pointer"
+            onClick={() => showModal()}
+            className="d3 col-span-1 justify-self-end flex flex-row items-center gap-[6px] cursor-pointer"
           >
             <div className="date text-10 text-[#41479B] font-normal">Share</div>
             <Image

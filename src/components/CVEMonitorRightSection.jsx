@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderTitle from "./reuseablleUI/HeaderTitle";
+import Link from "next/link";
 
 const CVEMonitorRightSection = () => {
   return (
@@ -44,7 +45,10 @@ const CVEMonitorRightSection = () => {
           </div>
 
           {/* rows  */}
-          <DatasetRow value="2330" range="0-1" color="#09B509" width="57px" />
+          <Link href={"/cvss-scopes"} className="cursor-pointer">
+            <DatasetRow value="2330" range="0-1" color="#09B509" width="57px" />
+          </Link>
+
           <DatasetRow value="2330" range="1-2" color="#17CF17" width="12px" />
           <DatasetRow value="2330" range="2-3" color="#D1FF00" width="55px" />
           <DatasetRow value="2330" range="3-4" color="#FFE000" width="122px" />

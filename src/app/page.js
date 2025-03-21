@@ -8,7 +8,7 @@ import ThreatIntelligenceCards from "@/components/ThreatIntelligenceCards";
 
 export default function Home() {
   return (
-    <div className="Dash1 w-[100vw] h-full bg-back text-border py-[27px] px-[30px]">
+    <div className="Dash1 w-full h-fulltext-border py-[27px] px-[30px]">
       {/* L1  */}
       <AddThreatBtn />
 

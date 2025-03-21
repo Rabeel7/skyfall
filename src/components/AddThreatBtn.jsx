@@ -44,7 +44,7 @@ const AddThreatBtn = () => {
             />
             <button
               type="button"
-              className="focus:outline-none text-white bg-red rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              className="focus:outline-none text-white bg-gradient-to-r from-[#6E3EA0] to-[#3D54A5] rounded-[6px] text-sm px-5 py-2.5 me-2 mb-2"
               style={{ background: "#6E3EA0" }}
             >
               Continue

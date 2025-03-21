@@ -13,6 +13,7 @@ const LeftGroup = () => {
           title="Active Ransomware Groups"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
+          link={"/active-ransomware-groups"}
         />
 
         <div className="A2 flex flex-col gap-[8px] pt-[16px] pr-[27px] pb-[26px] pl-[24px]">
@@ -46,7 +47,7 @@ const LeftGroup = () => {
           title="Recent Attack and Victims"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
-          link="/"
+          link="/recent-attack-victims"
         />
 
         {/* You are making recent attack victim card  */}
@@ -63,6 +64,7 @@ const LeftGroup = () => {
           title="Ransomware TTPs (Tactics, Techniques and Procedures)"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
+          link="/ransomware-ttps"
         />
 
         <div className="Card flex gap-[6px] flex-wrap ml-[14px] mt-[16px] mr-[19px] mb-[14px]">
@@ -122,6 +124,7 @@ const LeftGroup = () => {
           title="Ransomware Group Posts and Announcements:"
           iconSrc="/icons/openLink.png"
           iconAlt="Open Link"
+          link={"/group-posts"}
         />
 
         <div className="TableGrid pb-[15px] pl-[24px] pt-[12px] pr-[129px] ">

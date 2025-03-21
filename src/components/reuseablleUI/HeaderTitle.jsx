@@ -17,7 +17,7 @@ const HeaderTitle = ({
           {title}
         </div>
         {iconSrc && linkShow && (
-          <Link href="/screen2" className="cursor-pointer">
+          <Link href={link} className="cursor-pointer">
             <Image src={iconSrc} alt={iconAlt} width={20} height={20} />
           </Link>
         )}

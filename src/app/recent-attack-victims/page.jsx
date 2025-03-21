@@ -5,6 +5,7 @@ import PaginationRow from "@/components/reuseablleUI/PaginationRow";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Pagination } from "antd";
 
 const page = () => {
   return (
@@ -26,8 +27,13 @@ const page = () => {
             <RecentAttackVictimCard iconSrc={"/icons/rav1.svg"} />
             <RecentAttackVictimCard iconSrc={"/icons/rav1.svg"} />
           </div>
-          <div className="Pagination flex items-center justify-end">
-            <PaginationRow />
+          <div className="Pagination flex items-center justify-end mt-[32px]">
+            <Image
+              src="/icons/pagination-icon.svg"
+              alt="Calendar Icon"
+              width={190}
+              height={25}
+            />
           </div>
         </Card>
       </div>

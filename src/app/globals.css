@@ -22,6 +22,9 @@
   .lh-129 {
     @apply leading-[129%];
   }
+  .main {
+    @apply p-[30px];
+  }
 }
 
 @layer utilities {
@@ -55,7 +58,9 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
+  background: #f1f4f9;
+  height: 100%;
   font-family: "Inter";
   line-height: 140%;
 }
@@ -86,31 +91,58 @@ body {
   display: none; /* Hide the footer for this specific modal */
 }
 
-.custom-modal-2 .ant-modal-footer {
-  display: none; /* Hide the footer for this specific modal */
-}
-.custom-modal-2 .ant-modal-content {
-  height: 511px;
-  width: 533px;
-  padding: 32px;
+.custom-modal-2 {
+  /* Modal content styles */
+  .ant-modal-content {
+    height: 511px;
+    width: 533px;
+    padding: 32px;
+
+    /* Hide the footer */
+    .ant-modal-footer {
+      display: none;
+    }
+
+    /* Modal title styles */
+    .ant-modal-title {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      margin-bottom: 1rem;
+    }
+
+    /* Modal close button styles */
+    .ant-modal-close {
+      top: 36.5px;
+      right: 34px;
+      border-radius: 50%;
+
+      .anticon-close {
+        border-radius: 50%;
+        border: 4px solid black;
+        padding: 2px;
+        color: black;
+
+        .ant-modal-close-x {
+          .anticon anticon-close ant-modal-close-icon {
+            height: 20px;
+            width: 20px;
+
+            svg {
+              height: 20px; /* Adjust height as needed */
+              width: 20px; /* Adjust width as needed */
+              fill: black; /* Change SVG fill color */
+              stroke: black; /* Change SVG stroke color */
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.custom-modal-2 .ant-modal-title {
-  font-family: Inter;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin-bottom: 1rem;
-}
-
-.custom-modal-2 .ant-modal-close {
-  top: 36.5px;
-  right: 34px;
-}
-
-.custom-modal-2 .anticon .anticon-close .ant-modal-close-icon {
-  border-radius: 50%;
-  border: 2px solid black;
-  padding: 2px;
+.ant-table-thead > tr > th {
+  background-color: #e0e5ec !important;
 }

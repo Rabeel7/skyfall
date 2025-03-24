@@ -41,6 +41,7 @@ const AntTable = ({ rowSelectionIsOn = true, data, columns }) => {
       // total: 500,
       // }}
       pagination={false}
+      size={"small"}
     />
   );
 };

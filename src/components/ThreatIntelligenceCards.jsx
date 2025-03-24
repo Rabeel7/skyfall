@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderTitle from "./reuseablleUI/HeaderTitle";
 import Image from "next/image";
+import Link from "next/link";
 
 const ThreatIntelligenceCards = () => {
   return (
@@ -13,12 +14,14 @@ const ThreatIntelligenceCards = () => {
       />
 
       <div className="flex flex-row flex-wrap gap-[9px] px-[17px] py-[14px]">
-        <Image
-          src="/icons/google.svg"
-          alt="Calendar Icon"
-          width={100}
-          height={64}
-        />
+        <Link href={"/google-table"}>
+          <Image
+            src="/icons/google.svg"
+            alt="Calendar Icon"
+            width={100}
+            height={64}
+          />
+        </Link>
         <Image
           src="/icons/facebook.svg"
           alt="Calendar Icon"

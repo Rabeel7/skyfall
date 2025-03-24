@@ -70,51 +70,51 @@ const LeftGroup = () => {
         <div className="Card flex gap-[6px] flex-wrap ml-[14px] mt-[16px] mr-[19px] mb-[14px]">
           <UIButton
             title={"Akira"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Everest"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Spacebears"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Dragonforce"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Killsec"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Safeplay"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Funksec"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Clop"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Gdlockersec"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Rhysida"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Fog"}
-            className="bg-[#8C97B5] h-[24px] flex items-center"
+            className="bg-[#6B7280] h-[24px] flex items-center"
           />
           <UIButton
             title={"Gdlockersec"}
-            className="bg-[#8C97B5] h-[24px] flex items-center tracking-normal"
+            className="bg-[#6B7280] h-[24px] flex items-center tracking-normal"
           />
         </div>
       </div>

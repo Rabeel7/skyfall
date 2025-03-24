@@ -1,9 +1,14 @@
+import BackBtn from "@/components/reuseablleUI/BackBtn";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className="flex flex-col p-[30px]">
+      <Link href="/cvss-scopes">
+        <BackBtn />
+      </Link>
+
       <div className="box1 bg-white p-[20px] mb-[10px] flex flex-col rounded-[8px]">
         <p className="para font-bold text-[#41479B] lh-140 text-16 mb-[12px]">
           CVE-2025-26495

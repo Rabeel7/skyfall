@@ -3,7 +3,14 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ModalCard from "./reuseablleUI/ModalCard";
 
-const CyberNewsFeedCard = ({ iconSrc, category, title, date }) => {
+const CyberNewsFeedCard = ({
+  iconSrc,
+  category,
+  title,
+  date,
+  onTrendingNews = false,
+  onCard = false,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -11,18 +18,75 @@ const CyberNewsFeedCard = ({ iconSrc, category, title, date }) => {
   };
 
   return (
-    <div className="flex flex-row items-normal gap-[10px] bg-white rounded-[8px] py-[11px] px-[10px] leading-[140%] overflow-hidden text-ellipsis">
-      <div className="b1-img min-h-[70px] min-w-[70px]">
-        <Image src={iconSrc} alt="Icon" width={70} height={70} />
+    <div
+      className={`flex ${
+        onCard ? "flex-col-reverse" : "flex-row"
+      }  items-normal gap-[10px] bg-white ${
+        onTrendingNews ? "rounded-none" : "rounded-[8px] "
+      }  py-[11px] px-[10px] leading-[140%] overflow-hidden text-ellipsis`}
+    >
+      <div
+        className={`b1-img ${
+          onCard && onTrendingNews
+            ? "max-h-[263px] max-w-[603px]"
+            : onTrendingNews
+            ? "min-h-[173px] min-w-[273px]"
+            : "min-h-[70px] min-w-[70px]"
+        } `}
+      >
+        <Image
+          src={
+            onCard && onTrendingNews
+              ? "/icons/trending-news-card-icon.svg"
+              : onTrendingNews
+              ? "/icons/trending-news-icon.svg"
+              : iconSrc
+          }
+          alt="Icon"
+          width={onCard && onTrendingNews ? 604 : onTrendingNews ? 237 : 70}
+          height={onCard && onTrendingNews ? 236 : onTrendingNews ? 173 : 70}
+        />
       </div>
-      <div className="b2-content flex flex-col gap-[6px] flex-wrap">
-        <div className="font-normal text-11 text-purple leading-[100%] overflow-hidden text-ellipsis">
-          {category}
-        </div>
-        <div className="font-bold text-12 text-black leading-[140%] overflow-hidden text-ellipsis">
-          {title}
-        </div>
-        <div className="CardFooter grid grid-cols-3 gap-[4px] w-full">
+      <div
+        className={`b2-content flex flex-col ${
+          onTrendingNews ? "gap-[8px]" : "gap-[6px]"
+        } flex-wrap`}
+      >
+        {onTrendingNews && onCard ? (
+          <>
+            <div className="font-bold text-12 text-black leading-[140%] overflow-hidden text-ellipsis">
+              {title}
+            </div>
+            <div className="font-normal text-11 text-purple leading-[100%] overflow-hidden text-ellipsis">
+              {category}
+            </div>
+          </>
+        ) : onTrendingNews ? (
+          <>
+            <div className="font-bold text-12 text-black leading-[140%] overflow-hidden text-ellipsis">
+              {title}
+            </div>
+            <div className="font-normal text-11 text-purple leading-[100%] overflow-hidden text-ellipsis">
+              {category}
+            </div>
+            <div className="para text-[#8C97B5] overflow-hidden text-ellipsis">
+              The North Korean threat actor known as the Lazarus Group has been
+              observed leveraging a "web-based administrative platform" to
+              oversee its command-and-control (C2) infrastructure.
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="font-normal text-11 text-purple leading-[100%] overflow-hidden text-ellipsis">
+              {category}
+            </div>
+            <div className="font-bold text-12 text-black leading-[140%] overflow-hidden text-ellipsis">
+              {title}
+            </div>
+          </>
+        )}
+
+        <div className="CardFooter grid grid-cols-3 gap-[4px] w-full mt-auto">
           <div className="d1 col-span-1 flex flex-row items-center gap-[6px] leading-[100%] mr-auto">
             <Image
               src="/icons/calendar-icon.png"
